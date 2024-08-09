@@ -1,11 +1,11 @@
 "use client";
 
-import { shoppingCart } from "@/lib/db/cart";
+import { ShoppingCart } from "@/lib/db/cart";
 import formatPrice from "@/lib/format";
 import Link from "next/link";
 
 interface ShoppingCartButtonProps {
-  cart: shoppingCart | null;
+  cart: ShoppingCart | null;
 }
 
 function ShoppingCartButton({ cart }: ShoppingCartButtonProps) {
