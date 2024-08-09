@@ -2,7 +2,8 @@ import { prisma } from "@/lib/db/prisma";
 import { redirect } from "next/navigation";
 import FormSubmitButton from "@/components/formSubmitButton";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/app/pages/api/auth/[...nextauth]";
+
 export const metadata = {
   title: "Add Product - Next Store",
 };
